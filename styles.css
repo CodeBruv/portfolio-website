@@ -1,0 +1,63 @@
+/* Slideshow Transitions */
+.slideshow img {
+  transition: opacity 0.5s ease-in-out;
+  opacity: 1;
+  height: 40vw;
+}
+.slideshow img.hidden {
+  opacity: 0;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+@media (min-width: 640px) {
+  .slideshow img {
+    height: 14rem;
+  }
+}
+
+/* Fade-In Animation for Sections */
+section, header {
+  opacity: 0;
+  transform: translateY(20px);
+  animation: fadeInUp 0.8s ease-out forwards;
+}
+section:nth-child(2) { animation-delay: 0.2s; } /* About */
+section:nth-child(3) { animation-delay: 0.4s; } /* Skills */
+section:nth-child(4) { animation-delay: 0.6s; } /* Resume */
+section:nth-child(5) { animation-delay: 0.8s; } /* Projects */
+section:nth-child(6) { animation-delay: 1.0s; } /* Contact */
+
+@keyframes fadeInUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Hover Effects for Project Cards */
+#projects-list > div:hover {
+  transform: scale(1.02) translateY(-5px);
+  transition: transform 0.3s ease;
+  box-shadow: 0 10px 20px #747c8133; /* Gold shadow */
+}
+
+/* Hover Effects for Links */
+#projects-list a:hover {
+  color: #e8f1f733; /* Gold-300 */
+  transition: color 0.3s ease;
+}
+
+/* Hover Effect for Navbar Links */
+nav a:hover {
+  transform: scale(1.05);
+  transition: transform 0.3s ease;
+}
+
+/* Footer Styling */
+footer {
+  opacity: 0;
+  transform: translateY(20px);
+  animation: fadeInUp 0.8s ease-out forwards;
+  animation-delay: 1.2s;
+}

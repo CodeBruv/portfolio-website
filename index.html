@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Abdulmajid's Portfolio</title>
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="./styles.css>
+</head>
+
+<body class="bg-sky-200 font-serif">
+  <!-- Navigation Bar -->
+  <nav id="navbar" class="fixed top-0 left-0 w-full bg-sky-100 bg-opacity-90 shadow-lg z-50">
+    <div class="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
+      <!-- Logo -->
+      <div class="flex items-center">
+        <img src="images/logo.png" alt="Logo" class="h-10">
+      </div>
+      <!-- Navigation Links -->
+      <div class="hidden md:flex space-x-8">
+        <a href="#header" class="text-gray-900 hover:text-gray-500 transition-colors">Home</a>
+        <a href="#about" class="text-gray-900 hover:text-gray-500 transition-colors">About</a>
+        <a href="#skills" class="text-gray-900 hover:text-gray-500 transition-colors">Skills</a>
+        <a href="#resume" class="text-gray-900 hover:text-gray-500 transition-colors">Resume</a>
+        <a href="#projects" class="text-gray-900 hover:text-gray-500 transition-colors">Projects</a>
+        <a href="#contact" class="text-gray-900 hover:text-gray-500 transition-colors">Contact</a>
+      </div>
+      <!-- Hamburger Menu (for mobile) -->
+      <div class="md:hidden">
+        <button id="menu-toggle" class="text-gray-900 focus:outline-none">
+          <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+          </svg>
+        </button>
+      </div>
+    </div>
+    <!-- Mobile Menu (hidden by default) -->
+    <div id="mobile-menu" class="hidden md:hidden bg-sky-100 bg-opacity-95">
+      <div class="flex flex-col items-center space-y-4 py-6">
+        <a href="#header" class="text-gray-900 hover:text-gray-500 transition-colors">Home</a>
+        <a href="#about" class="text-gray-900 hover:text-gray-500 transition-colors">About</a>
+        <a href="#skills" class="text-gray-900 hover:text-gray-500 transition-colors">Skills</a>
+        <a href="#resume" class="text-gray-900 hover:text-gray-500 transition-colors">Resume</a>
+        <a href="#projects" class="text-gray-900 hover:text-gray-500 transition-colors">Projects</a>
+        <a href="#contact" class="text-gray-900 hover:text-gray-500 transition-colors">Contact</a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Header Section -->
+  <header id="header" class="pt-24 pb-12 text-center bg-opacity-50 bg-sky-200">
+    <h1 class="text-5xl text-gray-900">Abdulmajid's Portfolio</h1>
+    <p class="mt-3 text-xl text-gray-800">Frontend Developer | Crafting Elegant Web Experiences</p>
+  </header>
+
+  <!-- About Section -->
+<section id="about" class="py-16 px-4 sm:px-6 max-w-5xl mx-auto sm:max-w-4xl md:max-w-5xl">
+  <h2 class="text-4xl sm:text-4xl text-gray-900 mb-6 text-center">About Me</h2>
+  <p class="text-gray-900 text-lg sm:text-lg leading-relaxed">
+    I’m Abdulmajid, a Front-End Developer who brings ideas to life with clean, interactive web experiences. 
+    Proficnet in HTML, Tailwind CSS, and JavaScript, I create responsive designs like my user authentication UI and this portfolio that prioritize user engagement. 
+    Ready to build something amazing together?
+  </p>
+</section>
+
+<!-- Skills Section -->
+<section id="skills" class="py-16 px-4 sm:px-6 max-w-5xl mx-auto sm:max-w-4xl md:max-w-5xl rounded-t-xl bg-sky-200 bg-opacity-50">
+  <h2 class="text-4xl sm:text-4xl text-gray-900 mb-6 text-center">Skills</h2>
+  <ul class="list-none text-gray-800 text-lg sm:text-lg leading-relaxed grid grid-cols-1 sm:grid-cols-2 gap-4">
+    <li class="flex items-center"><span class="mr-2 text-gray-900">🌐</span> HTML: Crafting refined website structures</li>
+    <li class="flex items-center"><span class="mr-2 text-gray-900">🌐</span> CSS: Styling with native and bespoke designs</li>
+    <li class="flex items-center"><span class="mr-2 text-gray-900">🌐</span> Tailwind CSS: Building responsive, elegant layouts</li>
+    <li class="flex items-center"><span class="mr-2 text-gray-900">🌐</span> JavaScript: Adding sophisticated interactivity</li>
+  </ul>
+</section>
+
+<!-- Resume Section -->
+<section id="resume" class="bg-sky-200 py-16 px-4 sm:px-6 max-w-5xl mx-auto sm:max-w-4xl md:max-w-5xl rounded-b-xl shadow-xl bg-opacity-50">
+  <h2 class="text-4xl sm:text-4xl text-gold-400 mb-6 text-center">Resume</h2>
+  <div class="flex justify-center">
+    <a
+      href="https://drive.google.com/file/d/1EgdN7Zx4jJ0jVySS_udOgZDKfavax3_E/view?usp=sharing"
+      target="_blank"
+      rel="noopener noreferrer"
+      class="bg-sky-100 text-gray-900 py-3 px-6 rounded-lg shadow-lg border-2 border-gray-500 hover:bg-sky-200 transition-colors text-lg font-semibold"
+    >
+      View My Resume
+    </a>
+  </div>
+</section>
+
+<!-- Recent Projects Section -->
+<section id="projects" class="py-16 px-4 sm:px-6 max-w-5xl mx-auto sm:max-w-4xl md:max-w-5xl">
+  <h2 class="text-4xl sm:text-4xl text-gray-900 mb-6 text-center">Recent Projects</h2>
+  <div id="projects-list" class="space-y-8 flex flex-col items-center">
+    <!-- Project 1: User Authentication UI -->
+    <div class="bg-sky-200 bg-opacity-50 p-6 sm:p-8 rounded-xl shadow-xl w-full sm:w-11/12 md:w-full">
+      <h3 class="text-2xl text-gray-900 mb-3">User Authentication UI</h3>
+        <!-- Slideshow Container -->
+        <div class="relative">
+          <div class="slideshow overflow-auto rounded-lg">
+            <img src="images/1.png" class="w-full h-svw object-cover">
+            <img src="images/2.png" class="w-full h-svw object-cover hidden">
+            <img src="images/3.png" class="w-full h-svw object-cover hidden">
+          </div>
+          <!-- Navigation Dots -->
+          <div class="dots text-center mt-3">
+            <span class="dot w-3 h-3 bg-gray-500 rounded-full inline-block mx-1 cursor-pointer"></span>
+            <span class="dot w-3 h-3 bg-gray-500 rounded-full inline-block mx-1 cursor-pointer"></span>
+            <span class="dot w-3 h-3 bg-gray-500 rounded-full inline-block mx-1 cursor-pointer"></span>
+          </div>
+        </div>
+        <p class="text-gray-900 mt-4 text-lg">
+          A sleek Sign Up, Sign In, and Reset Password interface built with HTML, Tailwind CSS, and Alpine JS for toggles. 
+          It reflects polished design.
+        </p>
+        <div class="mt-4 space-x-4">
+          <a href="#https://github.com/codebruv/ui-project" class="text-gray-900 hover:text-gray-500">GitHub</a>
+          <a href="https://67fde708a483f3ad6cfe28cc--zippy-centaur-894b15.netlify.app/" target="_blank" class="text-gray-900 hover:text-gray-500">Live Demo</a>
+        </div>
+    </div>
+    <!-- Project 2: Placeholder -->
+    <div class="bg-sky-200 bg-opacity-50 p-6 sm:p-8 rounded-xl shadow-xl w-full sm:w-11/12 md:w-full">
+      <h3 class="text-2xl text-gray-900 mb-3">Beauty Store Landing Page</h3>
+        <!-- Slideshow Container -->
+        <div class="relative">
+          <div class="slideshow overflow-auto rounded-lg">
+            <img src="images/landing1.png" class="w-full h-svw object-cover">
+            <img src="images/landing2.png" class="w-full h-svw object-cover hidden">
+            <img src="images/landing3.png" class="w-full h-svw object-cover hidden">
+          </div>
+          <!-- Navigation Dots -->
+          <div class="dots text-center mt-3">
+            <span class="dot w-3 h-3 bg-gray-500 rounded-full inline-block mx-1 cursor-pointer"></span>
+            <span class="dot w-3 h-3 bg-gray-500 rounded-full inline-block mx-1 cursor-pointer"></span>
+            <span class="dot w-3 h-3 bg-gray-500 rounded-full inline-block mx-1 cursor-pointer"></span>
+          </div>
+        </div>
+        <p class="text-gray-900 mt-4 text-lg">
+          a beautiful website for a cosmetic brand that works perfectly on phones, tablets, and computers. 
+          It has product cards that zoom when you hover, a reviews section, a slideshow of products, and a newsletter signup form for updates, 
+          all styled with pretty colors. I used HTML, Tailwind CSS, and JavaScript to make it interactive. 
+          It scored 100% for speed and search engine ranking, 88% for ease of use on mobile (95% on desktop), and 93% for overall quality in testing.
+        </p>
+        <div class="mt-4 space-x-4">
+          <a href="github.com/CodeBruv/landing-page" class="text-gray-900 hover:text-gray-500">GitHub</a>
+          <a href="https://codbruv-landing-page.netlify.app/" target="_blank" class="text-gray-900 hover:text-gray-500">Live Demo</a>
+        </div>
+    </div>
+  </div>
+</section>
+
+<!-- Contact Section -->
+<section id="contact" class="py-16 px-4 sm:px-6 max-w-5xl mx-auto sm:max-w-4xl md:max-w-5xl bg-sky-200 bg-opacity-50">
+  <h2 class="text-4xl sm:text-4xl text-gray-900 mb-6 text-center">Contact Me</h2>
+  <div class="flex justify-center mt-6">
+    <a
+      href="https://www.linkedin.com/in/abdulmajid-abubakar-hussain-313311138/"
+      target="_blank"
+      rel="noopener noreferrer"
+      class="bg-sky-100 border-2 border-gray-500  hover:bg-sky-200 text-gray-900 py-3 px-6 rounded-lg shadow-lg transition-colors text-lg font-semibold"
+    >
+      Let's Connect on LinkedIn
+    </a>
+  </div>
+</section>
+
+  <!-- Back to Top Button -->
+  <button
+    id="back-to-top"
+    class="fixed bottom-6 right-6 bg-sky-100 border-2 border-gray-500  hover:bg-sky-200 text-gray-900 p-4 rounded-full shadow-lg hidden"
+  >
+    ↑ Top
+  </button>
+
+  <!-- Footer Section -->
+  <footer class="bg-sky-100 bg-opacity-90 shadow-lg py-6 text-center">
+    <p class="text-gray-900 text-lg">
+      &copy; <span id="copyright-year"></span> Abdulmajid. All rights reserved.
+    </p>
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>
