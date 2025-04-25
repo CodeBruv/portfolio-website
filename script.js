@@ -28,7 +28,7 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
   });
 });
 
-// Slideshow Functionality (unchanged from previous version)
+// Slideshow Functionality
 const slideshows = document.querySelectorAll('.slideshow');
 
 slideshows.forEach(slideshow => {
