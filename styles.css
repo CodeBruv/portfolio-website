@@ -44,7 +44,7 @@ section:nth-child(6) { animation-delay: 1.0s; } /* Contact */
 
 /* Hover Effects for Links */
 #projects-list a:hover {
-  color: #e8f1f733; /* Gold-300 */
+  color: #e8f1f733;
   transition: color 0.3s ease;
 }
 
