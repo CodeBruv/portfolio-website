@@ -71,7 +71,7 @@ slideshows.forEach(slideshow => {
   startAutoPlay();
 });
 
-// Back to Top Button (unchanged)
+// Back to Top Button
 const backToTopButton = document.getElementById('back-to-top');
 window.addEventListener('scroll', () => {
   if (window.scrollY > 300) {

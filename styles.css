@@ -39,7 +39,7 @@ section:nth-child(6) { animation-delay: 1.0s; } /* Contact */
 #projects-list > div:hover {
   transform: scale(1.02) translateY(-5px);
   transition: transform 0.3s ease;
-  box-shadow: 0 10px 20px #747c8133; /* Gold shadow */
+  box-shadow: 0 10px 20px #747c8133;
 }
 
 /* Hover Effects for Links */
